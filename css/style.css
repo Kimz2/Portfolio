@@ -1,25 +1,242 @@
 html {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
     background-color: #A5B8CD;
     color: #2C3852;
+    scroll-behavior: smooth;
 }
 
-.navbar {
-    list-style-type: none;
+body {
+    padding-bottom: 0px;
+    margin-bottom: -40px;
+}
+
+/*STYLE GUIDE*/
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+    mix-blend-mode: lighten;
+    background: -webkit-linear-gradient(0deg, #50FF34 0%, #F8FF00 31.77%, #FF75E1 65.63%, #D1C0FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+.subtitle2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.CTA {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
+    padding: 16px 40px;
+    border: none;
+    width: auto;
+    height: 48px;
+    background: #50FF34;
+    box-shadow: 0px 6px 0px #1E6214;
+    border-radius: 50px;
+    color: #2C3852;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto;
+    line-height: 0px;
+    position: relative;
+    cursor: pointer;
 }
 
+.CTA:hover {
+    box-shadow: 0px 8px 0px #1E6214;
+    top: -2px;
+}
+
+
+/* NAVBAR */
+header {
+    height: auto;
+    padding-bottom: 50px;
+}
+nav {
+    display: inline-flex;
+    vertical-align: top;
+    padding: 1%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
 .navitem {
     padding: 30px;
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
 }
-
-.logo {
+.navitem a {
+    color:  #2C3852;
+    text-decoration: none;
+}
+.logoDiv {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+}
+.logoPic {
     width: 118px;
     height: 55px;
 }
 
+
+
+
+/*HOME PAGE HERO*/
+#hero {
+    text-align: center;
+    padding: 120px;
+}
+.herotext {
+    text-align: center;
+    display: inline-block;
+    margin: -45px;
+}
+.downbutton {
+    padding-top: 190px;
+}
+
+
+
+/*PATRIOTA*/
+#patriota {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 250px;
+}
+.content1 {
+  padding-right: 3%;
+}
+.content1 p {
+    text-align: justify;
+    width: 525px;
+    padding-bottom: 30px;
+}
+.mock1 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: -10px;
+    align-items: flex-end;
+}
+.patriotaMock {
+    display: inline-flex;
+    margin-right: -15px;
+}
+.mainMock {
+    margin-right: -45px;
+}
+
+
+
+/*MENTAL HEALTH*/
+#mentalhealth {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 250px;
+}
+.content2 {
+    padding-left: 3%;
+}
+.content2 p {
+    text-align: justify;
+    width: 575px;
+    padding-bottom: 30px;
+}
+.mock2 {
+    width: 515px;
+    height: 600px;
+    overflow: scroll;
+    border-radius: 15px 15px 0 0;
+    padding: 1%;
+}
+
+.mock2 img {
+    border-radius: 15px;
+}
+
+
+/*ADOPT A STAR*/
+#adoptstar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 250px;
+
+}
+
+.content3 {
+    padding-right: 3%;
+}
+
+.content3 p {
+    text-align: justify;
+    width: 562px;
+    padding-bottom: 30px;
+}
+
+.mock3 {
+    width: 535px;
+    height: 600px;
+    overflow: scroll;
+    border-radius: 15px 15px 0 0;
+    padding: 1%;
+
+}
+
+.mock3 img {
+    border-radius: 15px;
+}
+
+
+
+
+/*FOOTER*/
+footer {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin: 0px;
+    align-items: flex-end;
+    width: 100%;
+    vertical-align: bottom;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+
+footer p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+}
+.liftman {
+    width: 125px;
+    height: 221px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -10px;
+    cursor: pointer;
+}
