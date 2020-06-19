@@ -35,47 +35,52 @@ h2 {
     margin-right: 150px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    border: solid 2px red;
     grid-template-areas:
         “pic pic pic bio bio bio”
         “snippet snippet empty empty snippet snippet”
         “blank blank diamond diamond blank blank”
         “chart chart chart chart chart chart”;
+    border: 1px solid red;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
+
 
 .me {
     grid-row: auto;
     grid-area: pic pic pic;
     grid-column: 1 /span3;
-    border: solid 2px red;
-    
+    border: 1px solid red;
 }
 
 .bio {
     grid-row: auto;
     grid-column: 4 /span6;
-    border: solid 2px red;
     grid-area: bio bio bio;
+    border: 1px solid red;
 
 }
 
 .me img {
     z-index: 2;
-    position: absolute;
+    display: inline-block;
 }
 
 .me h2{
-    margin: -23px;
-    position: absolute;
+    margin-bottom: -100px;
 }
 
 .nice2meet1 {
     z-index: 1;
+    padding-left: 50px;
+    padding-top: 25px;
 
 }
 
 .nice2meet2 {
     z-index: 3;
+    padding-left: 50px;
+    padding-top: 25px;
 
 }
 
