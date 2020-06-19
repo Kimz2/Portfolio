@@ -41,8 +41,6 @@ h2 {
         “blank blank diamond diamond blank blank”
         “chart chart chart chart chart chart”;
     border: 1px solid red;
-    flex-wrap: nowrap;
-    align-items: flex-start;
 }
 
 
@@ -63,25 +61,9 @@ h2 {
 
 .me img {
     z-index: 2;
-    display: inline-block;
 }
 
 .me h2{
     margin-bottom: -100px;
 }
-
-.nice2meet1 {
-    z-index: 1;
-    padding-left: 50px;
-    padding-top: 25px;
-
-}
-
-.nice2meet2 {
-    z-index: 3;
-    padding-left: 50px;
-    padding-top: 25px;
-
-}
-
 
