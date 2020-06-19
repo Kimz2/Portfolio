@@ -53,7 +53,7 @@ h2 {
 
 .bio {
     grid-row: auto;
-    grid-column: 2 /span6;
+    grid-column: 4 /span6;
     border: solid 2px red;
     grid-area: bio bio bio;
 
