@@ -1,0 +1,82 @@
+html {
+    background-color: #A5B8CD;
+    color: #2C3852;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-bottom: 0px;
+    margin-bottom: -40px;
+}
+
+/*STYLE GUIDE*/
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    mix-blend-mode: lighten;
+    background: -webkit-linear-gradient(0deg, #50FF34 0%, #F8FF00 31.77%, #FF75E1 65.63%, #D1C0FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+
+/*ABOUT ME HERO -- CSS GRID*/ 
+
+#aboutHero {
+    display: grid;
+    margin-left: 150px;
+    margin-right: 150px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border: solid 2px red;
+    grid-template-areas:
+        “pic pic pic bio bio bio”
+        “snippet snippet empty empty snippet snippet”
+        “blank blank diamond diamond blank blank”
+        “chart chart chart chart chart chart”;
+}
+
+.me {
+    grid-row: auto;
+    grid-area: pic pic pic;
+    grid-column: 1 /span3;
+    border: solid 2px red;
+    
+}
+
+.bio {
+    grid-row: auto;
+    grid-column: 2 /span6;
+    border: solid 2px red;
+    grid-area: bio bio bio;
+
+}
+
+.me img {
+    z-index: 2;
+    position: absolute;
+}
+
+.me h2{
+    margin: -23px;
+    position: absolute;
+}
+
+.nice2meet1 {
+    z-index: 1;
+
+}
+
+.nice2meet2 {
+    z-index: 3;
+
+}
+
+
