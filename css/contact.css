@@ -1,0 +1,109 @@
+html {
+    background-color: #A5B8CD;
+    color: #2C3852;
+    scroll-behavior: smooth;
+}
+body {
+    padding-bottom: 0px;
+    margin-bottom: -20px;
+}
+
+
+/*CONTACT BODY*/
+#contact {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+#contact img {
+    display: inline-flex;
+}
+.info {
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.info h2 {
+    display: flex;
+    margin-bottom: -100px;
+}
+
+/* email */
+.email {
+    display: inline-flex;
+    align-items: flex-end;
+    margin-top: 100px;
+    padding-left: 5px;
+}
+.email a {
+    display: inline-flex;
+    align-items: flex-end;
+    /* padding-left: 2px; */
+}
+.email a:hover {
+    filter: invert(17%) sepia(87%) saturate(5254%) hue-rotate(308deg) brightness(111%) contrast(117%);
+}
+.email p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.email svg {
+ padding-right: 14px;
+ padding-bottom: 3px;
+}
+
+/* phone */
+.phone {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5px;
+    margin-top: -2px;
+}
+.phone a {
+    display: inline-flex;
+    align-items: flex-end;
+    /* padding-left: 2px; */
+}
+.phone a:hover {
+    filter: invert(99%) sepia(97%) saturate(3849%) hue-rotate(8deg) brightness(110%) contrast(109%);
+}
+.phone p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    letter-spacing: .5px;
+}
+.phone svg {
+ padding-right: 14px;
+ padding-bottom: 4px;
+}
+
+/* linkedin*/
+.linkedin {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5px;
+    margin-top: -2px;
+}
+.linkedin a {
+    display: inline-flex;
+    align-items: flex-end;
+    padding-left: 2px;
+}
+.linkedin a:hover {
+    /* color: #50FF34; */
+    filter: invert(97%) sepia(96%) saturate(3330%) hue-rotate(45deg) brightness(120%) contrast(606%);
+    /* filter: invert(69%) sepia(41%) saturate(3074%) hue-rotate(62deg) brightness(103%) contrast(135%); */
+}
+.linkedin p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.linkedin svg {
+    display: inline;
+    padding-right: 14px;
+    padding-bottom: 4px;
+}

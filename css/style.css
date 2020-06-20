@@ -2,11 +2,21 @@ html {
     background-color: #A5B8CD;
     color: #2C3852;
     scroll-behavior: smooth;
+    width: auto;
+    padding: 0px;
+}
+
+html,body {
+    overflow-x: hidden;
 }
 
 body {
     padding-bottom: 0px;
-    margin-bottom: -40px;
+    margin-bottom: -20px;
+}
+a {
+    text-decoration: none;
+    color: #2C3852;
 }
 
 /*STYLE GUIDE*/
@@ -47,12 +57,19 @@ h1 {
     position: relative;
     cursor: pointer;
 }
-
 .CTA:hover {
     box-shadow: 0px 8px 0px #1E6214;
     top: -2px;
 }
+button:focus {
+    outline: none;
+}
 
+.CTA:active {
+    display: flex;
+    box-shadow: inset 4px 5px 7px rgba(0, 0, 0, 0.35), inset -3px -4px 10px rgba(255, 255, 255, 0.4);
+    top: 4px;
+}
 
 /* NAVBAR */
 header {
@@ -210,12 +227,12 @@ nav ul {
 footer {
     display: inline-flex;
     flex-wrap: nowrap;
-    margin: 0px;
+    /* margin: 0px; */
     align-items: flex-end;
     width: 100%;
     vertical-align: bottom;
     justify-content: space-between;
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
 }
 footer p {
     font-family: 'Poppins', sans-serif;
@@ -223,13 +240,14 @@ footer p {
     font-size: 12px;
     text-align: center;
     width: 100%;
-    padding-left: 120px;
+    padding-left: 150px;
+    padding-bottom: 15px;
 }
 .liftman {
     width: 125px;
     height: 221px;
     display: flex;
     justify-content: flex-end;
-    margin-right: -10px;
+    /* margin-right: -10px; */
     cursor: pointer;
 }
