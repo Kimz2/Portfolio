@@ -3,17 +3,16 @@ html {
     color: #2C3852;
     scroll-behavior: smooth;
 }
-
 body {
     padding-bottom: 0px;
     margin-bottom: -40px;
 }
-
 /*STYLE GUIDE*/
 h4 {
     font-family: 'Montserrat', sans-serif;
+    color: #2C3852;
+    font-size: 25px;
 }
-
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -27,43 +26,115 @@ h2 {
 }
 
 
-/*ABOUT ME HERO -- CSS GRID*/ 
-
+/*ABOUT ME HERO*/ 
 #aboutHero {
-    display: grid;
+    display: flex;
     margin-left: 150px;
     margin-right: 150px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -40px;
+    padding-bottom: 50px;
+    justify-content: center;
+    /* FUCK GRID FUCK GRID FUCK GRID 
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        “pic pic pic bio bio bio”
-        “snippet snippet empty empty snippet snippet”
-        “blank blank diamond diamond blank blank”
-        “chart chart chart chart chart chart”;
-    border: 1px solid red;
+        "pic pic pic bio bio bio"
+        "snippet snippet . . snippet snippet"
+        ". . diamond diamond . ."
+        "chart chart chart chart chart chart";
+    border: 1px solid red; */
 }
-
-
 .me {
-    grid-row: auto;
+    /* grid-row: auto;
     grid-area: pic pic pic;
     grid-column: 1 /span3;
-    border: 1px solid red;
+    border: 1px solid red; */
+    padding-right: 2%;
 }
-
 .bio {
-    grid-row: auto;
+    /* grid-row: auto;
     grid-column: 4 /span6;
     grid-area: bio bio bio;
-    border: 1px solid red;
-
+    border: 1px solid red; */
+    width: 500px;
+    margin-top: 100px;
+    text-align: justify;
+    padding-left: 2%;
+}
+.bio h4 {
+    margin-bottom: -15px;
+}
+.bio button {
+    margin-top: 50px;
 }
 
-.me img {
-    z-index: 2;
+
+
+/*Quick Facts With CSS Grid*/ 
+#facts {
+    /* align-content: center; */
+    display: grid;
+    margin-right: 250px;
+    margin-left: 250px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "superpower goodAt"
+        "kryptonite noThanks"
+        "diamond diamond";
+    padding-bottom: 150px;
+}
+.superpower {
+    grid-area: superpower;
+}
+.kryptonite {
+    grid-area: kryptonite;
+}
+.goodAt {
+    grid-area: goodAt;
+    justify-self: right;
+}
+.noThanks {
+    grid-area: noThanks;
+    justify-self: right;
+    padding-right: 20px;
+}
+#facts p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
+#facts h4 {
+    margin-bottom: -15px;
+}
+.diamond {
+    grid-area: diamond diamond;
+    justify-self: center;
+    grid-column: 1 /span2;
+    padding-top: 30px;
+}
+.diamond img {
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.me h2{
-    margin-bottom: -100px;
+
+/*Quick Facts With CSS Grid*/ 
+.skills {
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-self: center;
+    padding-bottom: 100px;
+}
+.skills img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
 }
 

@@ -170,7 +170,6 @@ nav ul {
     border-radius: 15px 15px 0 0;
     padding: 1%;
 }
-
 .mock2 img {
     border-radius: 15px;
 }
@@ -184,28 +183,22 @@ nav ul {
     align-items: center;
     padding-top: 200px;
     padding-bottom: 250px;
-
 }
-
 .content3 {
     padding-right: 3%;
 }
-
 .content3 p {
     text-align: justify;
     width: 562px;
     padding-bottom: 30px;
 }
-
 .mock3 {
     width: 535px;
     height: 600px;
     overflow: scroll;
     border-radius: 15px 15px 0 0;
     padding: 1%;
-
 }
-
 .mock3 img {
     border-radius: 15px;
 }
@@ -224,13 +217,13 @@ footer {
     justify-content: space-between;
     margin-bottom: -20px;
 }
-
 footer p {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-size: 12px;
     text-align: center;
     width: 100%;
+    padding-left: 120px;
 }
 .liftman {
     width: 125px;
