@@ -6,19 +6,30 @@
     <title>Kimia Mirenayat</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="/javascript/index.js"></script>
+    <script src="javascript/index.js"></script>
 </head>
 
 <body>
 <!--HEADER-->
 <header>
-    <nav>
-        <div class="logoDiv"><img src="Images/KMLogo.png" class="logoPic"></div>
-    <ul>
-        <li class="navitem"><a href="index.html">Works</a></li>
-        <li class="navitem"><a href="about.html">About</a></li>
-        <li class="navitem"><a href="contact.html">Contact</a></li>
-    </ul>
+    <nav class="navbar">
+    <div class="nest">
+       <img src="Images/KMLogo.png" class="logoPic">
+       
+        <!-- !!!!!! ADDED NAV RESPONSIVE !!!!!! -->
+            <svg class="hamburger" id="js-hamburger" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 13H22" stroke="#2C3852" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 19H22" stroke="#2C3852" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 7H22" stroke="#2C3852" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+    </div>
+                
+        <!-- !!!!!! ADDED NAV RESPONSIVE !!!!!! -->
+     <ul class="myMenu" id="js-myMenu">
+        <li><a href="index.html" class="navitem">Works</a></li>
+        <li><a href="about.html" class="navitem">About</a></li>
+        <li><a href="contact.html" class="navitem">Contact</a></li>
+     </ul>
     </nav>
 </header>
 
@@ -29,6 +40,24 @@
     <h1 class="herotext">See What's Up</h1><br>
     <h1 class="herotext">See What's Up</h1><br>
     <h1 class="herotext">See What's Up</h1><br>
+
+    <div class="mobile-herotext">
+        <h1 class="herotext">See What's Up</h1><br>
+        <h1 class="herotext">See What's Up</h1><br>
+        <h1 class="herotext">See What's Up</h1><br>
+        <h1 class="herotext">See What's Up</h1><br>
+        <h1 class="herotext">See What's Up</h1><br>
+    </div>
+
+    <div class="mobile-herotext2">
+        <h1 class="herotext">See What's Up</h1><br>
+        <h1 class="herotext">See What's Up</h1><br>
+        <h1 class="herotext">See What's Up</h1><br>
+        <h1 class="herotext">See What's Up</h1><br>
+        <h1 class="herotext">See What's Up</h1><br>
+    </div>
+
+
     <svg class="downbutton" width="60" height="23" viewBox="0 0 60 23" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path opacity="0.4" d="M4.3885 23C0.889165 23 -0.395318 18.3972 2.59836 16.5852L23.6667 3.83333L27.3642 1.59535C28.9846 0.614612 31.0154 0.614612 32.6358 1.59536L36.3333 3.83333L57.4016 16.5852C60.3953 18.3972 59.1108 23 55.6115 23C54.957 23 54.3159 22.8142 53.7628 22.4642L30 7.42708L6.23716 22.4642C5.68408 22.8142 5.04301 23 4.3885 23Z" fill="white"/>
     </svg>
@@ -86,6 +115,8 @@
     <p>Copyright 2020</p>
     <img src="Images/Elevator.png" class="liftman" title="Back to Top">
 </footer>
+
+
 
 </body>
 </html>

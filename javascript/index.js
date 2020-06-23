@@ -1,3 +1,8 @@
-$(".liftman").on("click", function() {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-  });
+window.onload = ()=> {
+let myMenu = document.getElementById("js-myMenu");
+let hamburger = document.getElementById("js-hamburger");
+
+hamburger.addEventListener("click", function() {
+  myMenu.classList.toggle("active");
+});
+}

@@ -23,13 +23,14 @@ a {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 100px;
+    font-size: 7.25vw;
     mix-blend-mode: lighten;
     background: -webkit-linear-gradient(0deg, #50FF34 0%, #F8FF00 31.77%, #FF75E1 65.63%, #D1C0FF 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     width: fit-content;
+    display: block;
 }
 
 .subtitle2 {
@@ -85,7 +86,7 @@ nav {
     align-items: center;
     height: 60px;
 }
-nav ul {
+.myMenu {
     list-style-type: none;
     display: inline-flex;
     flex-direction: row;
@@ -96,38 +97,132 @@ nav ul {
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     font-weight: 200;
-}
-.navitem a {
     color:  #2C3852;
     text-decoration: none;
 }
-.logoDiv {
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 10px;
-}
+
 .logoPic {
-    width: 118px;
-    height: 55px;
+    width: 120px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 3%;
 }
 
+/* !!!!!! ADDED NAV RESPONSIVE !!!!!! */
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        display: block;
+        margin-top: 2%;
+        align-items: baseline;   
+    }
+    .hamburger {
+        display: block;
+        padding-right: 4%;
+        cursor: pointer;
+    }
+    .nest {
+        display: inline-flex;
+        vertical-align: top;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logoPic {
+        width: 20%;
+        min-width: 55px;
+        height: 65%;
+        display: inline-block
+    }  
+    .myMenu {
+        display: none;
+    }
+    .myMenu li {
+        text-align: right;
+        /* margin: 15px auto; */
+        display: flex;
+        flex-direction: column;
+        z-index: 9999999999999;
+        align-items: center;
+        background-color: #bccbdd;
+        background-size: 100% auto;
+      }
+    .myMenu.active {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+}
 
 
 
 /*HOME PAGE HERO*/
 #hero {
     text-align: center;
-    padding: 120px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+
 }
 .herotext {
     text-align: center;
     display: inline-block;
-    margin: -45px;
+    margin: -3vw;
 }
 .downbutton {
     padding-top: 190px;
 }
 
+.mobile-herotext {
+    display: none;
+}
+.mobile-herotext2 {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    #hero {
+        margin-bottom: -20%;
+
+    }
+
+    .downbutton {
+        padding-top: 65%
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    .mobile-herotext {
+        display: inline-block;
+        margin-top: 20%;
+    }
+
+    .mobile-herotext .herotext {
+        margin: -3vw;
+    }
+
+    .mobile-herotext2 {
+        display: inline-block;
+        margin-top: 20%;
+    }
+
+    .mobile-herotext2 .herotext {
+        margin: -3vw;
+    }
+ 
+}
 
 
 /*PATRIOTA*/
@@ -251,3 +346,12 @@ footer p {
     /* margin-right: -10px; */
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 600) {
+    
+
+    } 
+}
+
+
