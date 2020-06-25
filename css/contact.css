@@ -5,7 +5,7 @@ html {
 }
 body {
     padding-bottom: 0px;
-    margin-bottom: -20px;
+    overflow-y: hidden;
 }
 
 
@@ -13,9 +13,16 @@ body {
 #contact {
     display: inline-flex;
     flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
 }
 #contact img {
     display: inline-flex;
+    max-width: 636px;
+    max-height: 677px;
+    width: 100%;
+    height: auto;
+    min-width: 350px;
 }
 .info {
     padding-left: 10%;
@@ -24,6 +31,32 @@ body {
 .info h2 {
     margin-bottom: -100px;
 }
+@media screen and (max-width: 600px) {
+#contact {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+}
+#contact img {
+    display: none;
+}
+.info {
+    width: 100%;
+    padding-left: 2%;
+    align-self: center;
+    margin: auto 0;
+    align-content: center;
+    padding-bottom: 200px;
+}
+#contact p {
+    font-size: 19px;
+}
+}
+
+
+
+
+
 
 /* email */
 .email {
@@ -105,4 +138,8 @@ body {
     display: inline;
     padding-right: 14px;
     padding-bottom: 4px;
+}
+
+
+footer {
 }

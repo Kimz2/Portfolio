@@ -12,7 +12,7 @@ html,body {
 
 body {
     padding-bottom: 0px;
-    margin-bottom: -20px;
+    background-color: #A5B8CD;
 }
 a {
     text-decoration: none;
@@ -25,6 +25,10 @@ h1 {
     font-weight: 800;
     font-size: 7.25vw;
     mix-blend-mode: lighten;
+    -webkit-mix-blend-mode: lighten;
+    -moz-mix-blend-mode: lighten;
+    -o-mix-blend-mode: lighten;
+    -ms-mix-blend-mode: lighten;
     background: -webkit-linear-gradient(0deg, #50FF34 0%, #F8FF00 31.77%, #FF75E1 65.63%, #D1C0FF 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -540,36 +544,40 @@ nav {
 footer {
     display: inline-flex;
     flex-wrap: nowrap;
-    margin: 0px;
     align-items: flex-end;
     width: 100%;
+    max-height: 300px;
     vertical-align: bottom;
     justify-content: space-between;
-    /* box-sizing: content-box; */
-    margin-bottom: -20px; 
+    margin-bottom: -20px;
+    overflow-y: hidden;
+    /* border: 3px red solid; */
 }
-footer p {
+.footerSpace {
+    width: 25%;
+}
+.footerP {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-size: 12px;
-    text-align: center;
-    width: 100%;
-    padding-left: 145px;
-    /* padding-bottom: 15px; */
+    padding-bottom: 15px;
+    flex-wrap: nowrap;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.footerImg {
+    width: 25vw;
 }
 .liftman {
-    width: 125px;
-    height: 221px;
+    max-width: 140px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: flex-end;
-    /* margin-right: -10px; */
     cursor: pointer;
+    margin-left: auto;
 }
 
-
-@media only screen and (max-width: 600) {
-    
-
-    } 
 
 
