@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Moi</title>
+    <title>Get in Touch</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/about.css" rel="stylesheet" type="text/css">
     <link href="css/contact.css" rel="stylesheet" type="text/css">
-    <script src="javascript/index.js"></script>
+    <!-- <script src="javascript/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 </head>
 <body>
 
@@ -16,14 +17,16 @@
 <header>
     <nav class="navbar">
     <div class="nest">
-       <img src="Images/KMLogo.png" class="logoPic">
+        <a name="topLogo" href="index.html">
+            <img src="Images/KMLogo.png" class="logoPic">
+           </a>
        
         <!-- !!!!!! ADDED NAV RESPONSIVE !!!!!! -->
-            <svg class="hamburger" id="js-hamburger" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 13H22" stroke="#2C3852" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M2 19H22" stroke="#2C3852" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M2 7H22" stroke="#2C3852" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <div class="hamburger" id="js-hamburger">
+            <div class="bar top"></div>
+	        <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+        </div>
     </div>
                 
         <!-- !!!!!! ADDED NAV RESPONSIVE !!!!!! -->
@@ -93,8 +96,13 @@
 <footer>
     <div class="footerSpace"></div>
     <p class="footerP">Copyright 2020</p>
-    <div class="footerImg"><img src="Images/Elevator.png" class="liftman" title="Back to Top"></div>
+    <div class="footerImg"><a href="#topLogo"><img src="Images/Elevator.png" class="liftman" title="Back to Top"></a></div>
 </footer>
+
+
+<!-- JAVASCRIPT & JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript/index.js"></script>
 
 
 </body>

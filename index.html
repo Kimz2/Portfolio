@@ -6,7 +6,10 @@
     <title>Kimia Mirenayat</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="javascript/index.js"></script>
+    <link href="css/about.css" rel="stylesheet" type="text/css">
+    <link href="css/contact.css" rel="stylesheet" type="text/css">
+    <!-- <script src="javascript/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 </head>
 
 <body>
@@ -14,14 +17,16 @@
 <header>
     <nav class="navbar">
     <div class="nest">
-       <img src="Images/KMLogo.png" class="logoPic">
+        <!-- <a name="topLogo" class="topLogo" href="index.html"> -->
+            <img src="Images/KMLogo.png" class="logoPic">
+           <!-- </a> -->
        
         <!-- !!!!!! ADDED NAV RESPONSIVE !!!!!! -->
-            <svg class="hamburger" id="js-hamburger" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 13H22" stroke="#2C3852" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M2 19H22" stroke="#2C3852" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M2 7H22" stroke="#2C3852" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <div class="hamburger" id="js-hamburger">
+            <div class="bar top"></div>
+	        <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+        </div>
     </div>
                 
         <!-- !!!!!! ADDED NAV RESPONSIVE !!!!!! -->
@@ -62,7 +67,6 @@
         <path opacity="0.4" d="M4.3885 23C0.889165 23 -0.395318 18.3972 2.59836 16.5852L23.6667 3.83333L27.3642 1.59535C28.9846 0.614612 31.0154 0.614612 32.6358 1.59536L36.3333 3.83333L57.4016 16.5852C60.3953 18.3972 59.1108 23 55.6115 23C54.957 23 54.3159 22.8142 53.7628 22.4642L30 7.42708L6.23716 22.4642C5.68408 22.8142 5.04301 23 4.3885 23Z" fill="white"/>
     </svg>
 </section>
-
 
 <!--PATRIOTA-->
 <section id="patriota">
@@ -114,10 +118,13 @@
 <footer>
     <div class="footerSpace"></div>
     <p class="footerP">Copyright 2020</p>
-    <div class="footerImg"><img src="Images/Elevator.png" class="liftman" title="Back to Top"></div>
+    <div class="footerImg"><a href="#topLogo"><img src="Images/Elevator.png" class="liftman" title="Back to Top"></a></div>
 </footer>
 
 
+<!-- JAVASCRIPT & JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript/index.js"></script>
 
 </body>
 </html>

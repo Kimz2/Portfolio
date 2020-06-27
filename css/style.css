@@ -98,7 +98,10 @@ nav {
     padding-right: 30px;
 }
 .navitem {
-    padding: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     font-weight: 200;
@@ -129,9 +132,40 @@ nav {
     }
     .hamburger {
         display: block;
-        padding-right: 4%;
-        cursor: pointer;
+	    margin-right: 4%;
     }
+    .hamburger .bar {
+		width: 22px;
+		height: 2px;
+		border-radius: 1000px;		
+		background: #2C3852;
+        transition: all 0.3s ease;
+        padding-right: 4%;
+     }
+    .hamburger .bar:not(.top) {
+		margin-top: 4px;
+	}
+	.hamburger .top {
+		transform-origin: 25% 0;
+		transform: rotate(0deg);
+	}
+	.hamburger .bottom {
+		transform-origin: 0 50%;
+		transform: rotate(0deg);
+	}
+	.hamburger .middle {
+		opacity: 1;
+	}
+    
+	.hamburger.active .bar.top {
+		transform: rotate(45deg);	
+	}
+    .hamburger.active .bar.middle {
+		opacity: 0;	
+	}
+	.hamburger.active .bar.bottom {
+		transform: rotate(-45deg);	
+	}    
     .nest {
         display: inline-flex;
         vertical-align: top;
@@ -150,18 +184,22 @@ nav {
         display: none;
     }
     .myMenu li {
-        text-align: right;
+        text-align: center;
         display: flex;
         flex-direction: column;
-        z-index: 9999999999999;
         align-items: center;
-        background-color: #bccbdd;
         background-size: 100% auto;
+        background-color:#bccbdd; 
+        z-index: 99999;
       }
     .myMenu.active {
         display: flex;
         padding: 0;
         flex-direction: column;
+        animation: growDown 300ms ease-in-out forwards;
+        transform-origin: top center;
+        z-index: 999999;
+        position: relative;
     }
     li:not(:nth-of-type(3)) .navitem {
         border-bottom: #1e87ff42 .5px solid;
@@ -172,13 +210,58 @@ nav {
     .navitem {
         padding-right: 15%;
         padding-left: 15%;
+        padding-bottom: 10%;
+        padding-top: 10%;
     }
     li:hover {
         font-weight: 400;
     }
+    @-moz-keyframes growDown {
+        0% {
+          transform: scaleY(0);
+        }
+        80% {
+          transform: scaleY(1.1);
+        }
+        100% {
+          transform: scaleY(1);
+        }
+      }
+      @-webkit-keyframes growDown {
+        0% {
+          transform: scaleY(0);
+        }
+        80% {
+          transform: scaleY(1.1);
+        }
+        100% {
+          transform: scaleY(1);
+        }
+      }
+      @-o-keyframes growDown {
+        0% {
+          transform: scaleY(0);
+        }
+        80% {
+          transform: scaleY(1.1);
+        }
+        100% {
+          transform: scaleY(1);
+        }
+      }
+      @keyframes growDown {
+        0% {
+          transform: scaleY(0);
+        }
+        80% {
+          transform: scaleY(1.1);
+        }
+        100% {
+          transform: scaleY(1);
+        }
+      }
 }
 /* !!!!!! END NAV RESPONSIVE !!!!!! */
-
 
 
 
@@ -194,6 +277,7 @@ nav {
     text-align: center;
     display: inline-block;
     margin: -3vw;
+    
 }
 .downbutton {
     margin-top: 28%;
@@ -205,6 +289,9 @@ nav {
 .mobile-herotext2 {
     display: none;
 }
+
+
+
 
 
 /* !!!!!! HERO RESPONSIVE !!!!!! */
@@ -549,9 +636,7 @@ footer {
     max-height: 300px;
     vertical-align: bottom;
     justify-content: space-between;
-    margin-bottom: -20px;
     overflow-y: hidden;
-    /* border: 3px red solid; */
 }
 .footerSpace {
     width: 25%;
@@ -560,14 +645,17 @@ footer {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-size: 12px;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
     flex-wrap: nowrap;
     display: flex;
     width: 50%;
     justify-content: center;
+    margin-block-end: .25em;
 }
 .footerImg {
     width: 25vw;
+    margin-block-end: -1em;
+
 }
 .liftman {
     max-width: 140px;
