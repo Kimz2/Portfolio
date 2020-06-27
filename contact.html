@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get in Touch</title>
+    <title>Kimia Mirenayat</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+    <!-- <script src="javascript/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="cssanimation/cssanimation.css"> 
+
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/about.css" rel="stylesheet" type="text/css">
     <link href="css/contact.css" rel="stylesheet" type="text/css">
-    <!-- <script src="javascript/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 </head>
 <body>
 
@@ -17,10 +20,10 @@
 <header>
     <nav class="navbar">
     <div class="nest">
-        <a name="topLogo" href="index.html">
+        <a name="topLogo" class="topLogo" href="index.html">
             <img src="Images/KMLogo.png" class="logoPic">
            </a>
-       
+        <div class="spacer"></div>
         <!-- !!!!!! ADDED NAV RESPONSIVE !!!!!! -->
         <div class="hamburger" id="js-hamburger">
             <div class="bar top"></div>
@@ -33,7 +36,7 @@
      <ul class="myMenu" id="js-myMenu">
         <li><a href="index.html" class="navitem">Works</a></li>
         <li><a href="about.html" class="navitem">About</a></li>
-        <li><a href="contact.html" class="navitem">Contact</a></li>
+        <li><a href="contact.html" class="navitem active">Contact</a></li>
      </ul>
     </nav>
 </header>
@@ -45,9 +48,9 @@
         <img src="Images/Phone_Cropped.png">
     </div>
     <div class="info">
-        <h2>Besties?</h2><br>
-        <h2>Besties?</h2><br>
-        <h2>Besties?</h2>
+        <h2 data-scrolly-top="blurInTop" data-scrolly-down="blurInBottom">Besties?</h2><br>
+        <h2 data-scrolly-top="blurInTop, delay:.2" data-scrolly-down="blurInBottom, delay:.1s">Besties?</h2><br>
+        <h2 data-scrolly-top="blurInTop, delay:.3s" data-scrolly-down="blurInBottom, delay:.2s">Besties?</h2>
         <div class="email">
             <a href="#">
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,6 +107,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="javascript/index.js"></script>
 
+
+<!-- JAVASCRIPT PLUG INS -->
+<script type="text/javascript" src="javascript/scrolly.js"></script>
+<script>
+   window.onload = function() {
+      scrolly();
+   }; 
+</script>
 
 </body>
 </html>

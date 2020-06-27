@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Moi</title>
+    <title>Kimia Mirenayat</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+    <!-- <script src="javascript/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="cssanimation/cssanimation.css"> 
+
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/about.css" rel="stylesheet" type="text/css">
     <link href="css/contact.css" rel="stylesheet" type="text/css">
-    <!-- <script src="javascript/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 </head>
 <body>
 <!--HEADER-->
 <header>
     <nav class="navbar">
     <div class="nest">
-        <a name="topLogo" href="index.html">
+        <a name="topLogo" class="topLogo" href="index.html">
             <img src="Images/KMLogo.png" class="logoPic">
            </a>
-       
+        <div class="spacer"></div>
         <!-- !!!!!! ADDED NAV RESPONSIVE !!!!!! -->
         <div class="hamburger" id="js-hamburger">
             <div class="bar top"></div>
@@ -31,14 +34,14 @@
         <!-- !!!!!! ADDED NAV RESPONSIVE !!!!!! -->
      <ul class="myMenu" id="js-myMenu">
         <li><a href="index.html" class="navitem">Works</a></li>
-        <li><a href="about.html" class="navitem">About</a></li>
+        <li><a href="about.html" class="navitem active">About</a></li>
         <li><a href="contact.html" class="navitem">Contact</a></li>
      </ul>
     </nav>
 </header>
 
 <!--HERO-->
-<section id="aboutHero">
+<section id="aboutHero" data-scrolly-top="fadeInTop">
     <div class="me">
         <img src="Images/AboutPic.png">
     </div>
@@ -53,27 +56,27 @@
 
 <!-- FACTS -->
 <section id="facts">
-    <div class="superpower">
+    <div class="superpower" data-scrolly-down="blurInTop2" data-scrolly-top="fadeInTop">
         <h4>Superpower</h4>
         <p>Being a perfectionist</p>
     </div>
 
-    <div class="goodAt">
+    <div class="goodAt" data-scrolly-down="blurInTop2" data-scrolly-top="fadeInTop">
         <h4>Want to be Good at</h4>
         <p>Coding and animation</p>
     </div>
 
-    <div class="kryptonite">
+    <div class="kryptonite" data-scrolly-down="blurInTop2" data-scrolly-top="fadeInTop">
         <h4>Kryptonite</h4>
         <p>Being a perfectionist</p>
     </div>
 
-    <div class="noThanks">
+    <div class="noThanks" data-scrolly-down="blurInTop2" data-scrolly-top="fadeInTop">
         <h4>No Thanks</h4>
         <p>Back end programming</p>
     </div>
 
-   <div class="diamond">
+   <div class="diamond" data-scrolly-down="blurInTop2" data-scrolly-top="fadeInTop">
         <h4>Favorite Parts of the Design Process</h4>
         <img src="Images/DoubleDiamond.png">
     </div>
@@ -82,7 +85,7 @@
 
 <!-- SKILLS CHART -->
 <section class="skills">
-    <img src="Images/Skills.png" height="662px" width="827px">
+    <img src="Images/Skills.png" height="662px" width="827px" data-scrolly-down="blurInTop2" data-scrolly-top="fadeInTop">
     <form> <button formaction="contact.html"  type="submit" class="secondaryButton">Get in Touch</button> </form>
 
 </section>
@@ -103,6 +106,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="javascript/index.js"></script>
 
+
+<!-- JAVASCRIPT PLUG INS -->
+<script type="text/javascript" src="javascript/scrolly.js"></script>
+<script>
+   window.onload = function() {
+      scrolly();
+   }; 
+</script>
 
 </body>
 </html>

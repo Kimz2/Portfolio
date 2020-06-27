@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimia Mirenayat</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+    <!-- <script src="javascript/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="cssanimation/cssanimation.css"> 
+
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/about.css" rel="stylesheet" type="text/css">
     <link href="css/contact.css" rel="stylesheet" type="text/css">
-    <!-- <script src="javascript/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 </head>
 
 <body>
@@ -17,10 +20,10 @@
 <header>
     <nav class="navbar">
     <div class="nest">
-        <!-- <a name="topLogo" class="topLogo" href="index.html"> -->
+        <a name="topLogo" class="topLogo" href="index.html">
             <img src="Images/KMLogo.png" class="logoPic">
-           <!-- </a> -->
-       
+           </a>
+        <div class="spacer"></div>
         <!-- !!!!!! ADDED NAV RESPONSIVE !!!!!! -->
         <div class="hamburger" id="js-hamburger">
             <div class="bar top"></div>
@@ -31,7 +34,7 @@
                 
         <!-- !!!!!! ADDED NAV RESPONSIVE !!!!!! -->
      <ul class="myMenu" id="js-myMenu">
-        <li><a href="index.html" class="navitem">Works</a></li>
+        <li><a href="index.html" class="navitem active">Works</a></li>
         <li><a href="about.html" class="navitem">About</a></li>
         <li><a href="contact.html" class="navitem">Contact</a></li>
      </ul>
@@ -40,26 +43,26 @@
 
 <!--HERO-->
 <section id="hero">
-    <h1 class="herotext">See What's Up</h1><br>
-    <h1 class="herotext">See What's Up</h1><br>
-    <h1 class="herotext">See What's Up</h1><br>
-    <h1 class="herotext">See What's Up</h1><br>
-    <h1 class="herotext">See What's Up</h1><br>
+    <h1 class="herotext" data-scrolly-top="blurInTop, delay:.4s" data-scrolly-down="blurInBottom">See What's Up</h1><br>
+    <h1 class="herotext" data-scrolly-top="blurInTop, delay:.3s" data-scrolly-down="blurInBottom, delay:.1s">See What's Up</h1><br>
+    <h1 class="herotext" data-scrolly-top="blurInTop, delay:.2s" data-scrolly-down="blurInBottom, delay:.2s">See What's Up</h1><br>
+    <h1 class="herotext" data-scrolly-top="blurInTop, delay:.1s" data-scrolly-down="blurInBottom, delay:.3s">See What's Up</h1><br>
+    <h1 class="herotext" data-scrolly-top="blurInTop" data-scrolly-down="blurInBottom, delay:.4s">See What's Up</h1><br>
 
     <div class="mobile-herotext">
-        <h1 class="herotext">See What's Up</h1><br>
-        <h1 class="herotext">See What's Up</h1><br>
-        <h1 class="herotext">See What's Up</h1><br>
-        <h1 class="herotext">See What's Up</h1><br>
-        <h1 class="herotext">See What's Up</h1><br>
+        <h1 class="herotext" data-scrolly-top="blurInTop, delay:.4s" data-scrolly-down="blurInBottom">See What's Up</h1><br>
+        <h1 class="herotext" data-scrolly-top="blurInTop, delay:.3s" data-scrolly-down="blurInBottom, delay:.1s">See What's Up</h1><br>
+        <h1 class="herotext" data-scrolly-top="blurInTop, delay:.2s" data-scrolly-down="blurInBottom, delay:.2s">See What's Up</h1><br>
+        <h1 class="herotext" data-scrolly-top="blurInTop, delay:.1s" data-scrolly-down="blurInBottom, delay:.3s">See What's Up</h1><br>
+        <h1 class="herotext" data-scrolly-top="blurInTop" data-scrolly-down="blurInBottom, delay:.4s">See What's Up</h1><br>
     </div>
 
     <div class="mobile-herotext2">
-        <h1 class="herotext">See What's Up</h1><br>
-        <h1 class="herotext">See What's Up</h1><br>
-        <h1 class="herotext">See What's Up</h1><br>
-        <h1 class="herotext">See What's Up</h1><br>
-        <h1 class="herotext">See What's Up</h1><br>
+        <h1 class="herotext" data-scrolly-top="blurInTop, delay:.4s" data-scrolly-down="blurInBottom">See What's Up</h1><br>
+        <h1 class="herotext" data-scrolly-top="blurInTop, delay:.3s" data-scrolly-down="blurInBottom, delay:.1s">See What's Up</h1><br>
+        <h1 class="herotext" data-scrolly-top="blurInTop, delay:.2s" data-scrolly-down="blurInBottom, delay:.2s">See What's Up</h1><br>
+        <h1 class="herotext" data-scrolly-top="blurInTop, delay:.1s" data-scrolly-down="blurInBottom, delay:.3s">See What's Up</h1><br>
+        <h1 class="herotext" data-scrolly-top="blurInTop" data-scrolly-down="blurInBottom, delay:.4s">See What's Up</h1><br>
     </div>
 
 
@@ -70,7 +73,7 @@
 
 <!--PATRIOTA-->
 <section id="patriota">
-    <div class="content1">
+    <div class="content1" data-scrolly-top="moveFromLeft, duration:1s" data-scrolly-down="moveFromLeft, duration:1s">
         <img src="Images/Works/PatriotaLogo.png" height="61px" width="236px">
         <p class="subtitle2">Citizens today feel disenchanted by extreme party affiliations and biased political news sources. We designed Patriota as a compass for US citizens to make their own decisions on how to vote, without the noise and fragmentation caused by party affiliations and the media.</p>
         <button type="button" class="CTA">Case Study</button>
@@ -88,7 +91,7 @@
     <div class="mock2">
         <img src="Images/Works/MentalLanding.png">
     </div>
-    <div class="content2">
+    <div class="content2" data-scrolly-top="moveFromRight, duration:1s" data-scrolly-down="moveFromRight, duration:1s">
         <img src="Images/MentalHealth/MentalLogo.png" height="90px" width="201px">
         <p class="subtitle2">Mentalhealth.gov provides information and support to Americans on the topic of mental health. Our primary goal with the redesign was to convey the philosophy that Mental Health Matters. We wanted to deviate from traditional government websites by creating a welcoming atmosphere that evokes lightness and simplicity.</p>
         <button type="button" class="CTA">Case Study</button>
@@ -99,7 +102,7 @@
 
 <!--ADOPT A STAR-->
 <section id="adoptstar">
-    <div class="content3">
+    <div class="content3" data-scrolly-top="moveFromLeft, duration:1s" data-scrolly-down="moveFromLeft, duration:1s">
         <img src="Images/Works/AdoptStarLogo.png">
         <p class="subtitle2">Adopastar.org is a nonprofit dedicated to raising funds for scientific research in the field of astronomy. Our aim was to redesign a contemporary interface that was minimal and futuristic. We wanted to create an engaging experience that provided incentive by piquing the interest of users who are unfamiliar with astronomy.</p>
         <button type="button" class="CTA">Case Study</button>
@@ -122,9 +125,20 @@
 </footer>
 
 
+
+
 <!-- JAVASCRIPT & JQUERY -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="javascript/index.js"></script>
+
+<!-- JAVASCRIPT PLUG INS -->
+<script type="text/javascript" src="javascript/scrolly.js"></script>
+<script>
+   window.onload = function() {
+      scrolly();
+   }; 
+</script>
+
 
 </body>
 </html>

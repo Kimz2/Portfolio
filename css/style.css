@@ -107,6 +107,7 @@ nav {
     font-weight: 200;
     color:  #2C3852;
     text-decoration: none;
+    display: block;
 }
 .logoPic {
     width: 120px;
@@ -115,6 +116,21 @@ nav {
     vertical-align: middle;
     padding-left: 3%;
 }
+.spacer {
+    width: 30%;
+    display: none;
+}
+.navitem.active {
+    font-weight: 400;
+    animation-name: pushRelease; 
+    animation-duration: 1.5s;
+}
+.navitem:hover {
+    animation-name: pullRelease; 
+    animation-duration: 1.5s;
+    color: yellow;
+}
+
 
 /* !!!!!! NAV RESPONSIVE !!!!!! */
 .hamburger {
@@ -129,6 +145,10 @@ nav {
         display: block;
         margin-top: 2%;
         align-items: baseline;   
+    }
+    .spacer {
+        width: 30%;
+        display: inline-flex;
     }
     .hamburger {
         display: block;
@@ -156,7 +176,6 @@ nav {
 	.hamburger .middle {
 		opacity: 1;
 	}
-    
 	.hamburger.active .bar.top {
 		transform: rotate(45deg);	
 	}
@@ -175,7 +194,7 @@ nav {
     }
     .logoPic {
         width: 20%;
-        min-width: 55px;
+        min-width: 80px;
         height: 65%;
         display: inline-block;
         padding-left: 2%;
@@ -262,6 +281,7 @@ nav {
       }
 }
 /* !!!!!! END NAV RESPONSIVE !!!!!! */
+
 
 
 

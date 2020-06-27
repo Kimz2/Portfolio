@@ -147,8 +147,8 @@ h2 {
 /*Quick Facts With CSS Grid*/ 
 #facts {
     display: grid;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 14%;
+    margin-left: 14%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
@@ -161,6 +161,7 @@ h2 {
 .superpower {
     grid-area: superpower;
     width: max-content;
+    padding-bottom: 5%;
 }
 .kryptonite {
     grid-area: kryptonite;
@@ -170,6 +171,7 @@ h2 {
     grid-area: goodAt;
     justify-self: right;
     width: max-content;
+    padding-bottom: 5%;
 }
 .noThanks {
     grid-area: noThanks;
