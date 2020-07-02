@@ -27,6 +27,21 @@ h2 {
     -webkit-text-fill-color: transparent;
     width: fit-content;
 }
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    mix-blend-mode: lighten;
+    -webkit-mix-blend-mode: lighten;
+    -moz-mix-blend-mode: lighten;
+    -o-mix-blend-mode: lighten;
+    -ms-mix-blend-mode: lighten;
+    background: -webkit-linear-gradient(0deg, #50FF34 0%, #F8FF00 31.77%, #FF75E1 65.63%, #D1C0FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
 .secondaryButton {
     display: flex;
     align-items: center;

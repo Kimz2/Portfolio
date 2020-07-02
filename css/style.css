@@ -36,11 +36,33 @@ h1 {
     width: fit-content;
     display: block;
 }
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    mix-blend-mode: lighten;
+    -webkit-mix-blend-mode: lighten;
+    -moz-mix-blend-mode: lighten;
+    -o-mix-blend-mode: lighten;
+    -ms-mix-blend-mode: lighten;
+    background: -webkit-linear-gradient(0deg, #50FF34 0%, #F8FF00 31.77%, #FF75E1 65.63%, #D1C0FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2C3852;
+    font-size: 25px;
+    font-weight: bold;
+}
 
 .subtitle2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 22px;
+    line-height: 31px;
 }
 
 .CTA {
@@ -122,13 +144,16 @@ nav {
 }
 .navitem.active {
     font-weight: 400;
-    animation-name: pushRelease; 
+    color: yellow;
+    animation-timing-function: ease-in-out;
     animation-duration: 1.5s;
+    animation-name: lePopOut; 
 }
 .navitem:hover {
-    animation-name: pullRelease; 
+    animation-name: lePopUp;
     animation-duration: 1.5s;
     color: yellow;
+    text-decoration: none;
 }
 
 

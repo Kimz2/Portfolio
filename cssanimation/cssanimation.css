@@ -335,7 +335,13 @@ Letter Jump
 **************************************************************/
 .leJump span { animation-name: leJump; animation-iteration-count: infinite }
 @keyframes leJump {
-    to { transform: translateY(-20px) }
+    to { transform: translateY(-10px) }
+}
+
+.leJump2 span { animation-name: leJump2; animation-iteration-count: infinite }
+@keyframes leJump2 {
+    to { transform: translateY(-10px);
+        text-decoration: underline;}
 }
 
 /*************************************************************
@@ -1154,7 +1160,10 @@ Letter Pop Up
 **************************************************************/
 .lePopUp span { animation-name: lePopUp }
 @keyframes lePopUp {
-    50% { transform: scale(1.5) }
+    50% { transform: scale(1.5);
+    color: rgb(102, 255, 0);
+    text-decoration: none;
+ }
 }
 
 .lePopUpLeft span { animation-name: lePopUpLeft }
@@ -1179,7 +1188,9 @@ Letter Pop Out
 
 .lePopOut span { animation-name: lePopOut }
 @keyframes lePopOut {
-    50% { transform: scale(.5) }
+    50% { transform: scale(.5);
+    text-shadow: 20px 20px rgb(102, 255, 0);
+ }
 }
 
 .lePopOutLeft span { animation-name: lePopOutLeft }
