@@ -19,6 +19,16 @@ a {
     color: #2C3852;
 }
 
+.button a {
+    text-decoration: none;
+    color: #2C3852;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #2C3852;
+}
+
 /*STYLE GUIDE*/
 h1 {
     font-family: 'Montserrat', sans-serif;
