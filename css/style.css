@@ -389,6 +389,13 @@ nav {
 .content1 {
   padding-right: 3%;
 }
+.bokaylogo {
+    max-width: 250px;
+    max-height: auto;
+    width: 200px;
+    height: auto;
+    margin-bottom: -4%;
+}
 .content1 p {
     text-align: justify;
     max-width: 500px;
@@ -403,25 +410,7 @@ nav {
     align-items: flex-end;
     min-width: 300px;
 }
-.patriotaMock2 {
-    margin-right: -2%;
-    max-width: 197px;
-    max-height: auto;
-    width: 30%;
-}
-.patriotaMock3 {
-    margin-right: -10%;
-    max-width: 197px;
-    max-height: auto;
-    width: 30%;
-}
-.patriotaMock1 {
-    margin-right: -6%;
-    max-width: 277px;
-    max-height: auto;
-    align-items: flex-end;
-    width: 40%;
-}
+
 /*PATRIOTA RESPONSIVE*/
 @media screen and (max-width: 600px) {
     #patriota {
@@ -576,6 +565,17 @@ nav {
     width: auto;
     margin-bottom: 12%;
     padding-top: 100px;
+    padding-bottom: 100px;
+}
+#adoptstar2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+    width: auto;
+    margin-bottom: 6%;
+    margin-top: 1%;
     padding-bottom: 100px;
 }
 .content3 {
